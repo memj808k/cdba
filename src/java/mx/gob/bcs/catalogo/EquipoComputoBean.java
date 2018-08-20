@@ -33,7 +33,8 @@ public class EquipoComputoBean extends EmpleadoBean implements Serializable{
     private String procesador_velocidad;
     private String chipset;
     private String video;
-    private int licencia; // 1 = si o 0 = no
+    private int licencia_os; // 1 = si o 0 = no
+    private int licencia_paqueteria;
     private String software;
     private int paqueteriaOfimatica_id;
     private String paqueteriaOfimatica;
@@ -188,13 +189,39 @@ public class EquipoComputoBean extends EmpleadoBean implements Serializable{
         this.video = video;
     }
 
-    public int getLicencia() {
-        return licencia;
+    public int getTipo_equipo_id() {
+        return tipo_equipo_id;
     }
 
-    public void setLicencia(int licencia) {
-        this.licencia = licencia;
+    public void setTipo_equipo_id(int tipo_equipo_id) {
+        this.tipo_equipo_id = tipo_equipo_id;
     }
+
+    public String getTipo_equipo() {
+        return tipo_equipo;
+    }
+
+    public void setTipo_equipo(String tipo_equipo) {
+        this.tipo_equipo = tipo_equipo;
+    }
+
+    public int getLicencia_os() {
+        return licencia_os;
+    }
+
+    public void setLicencia_os(int licencia_os) {
+        this.licencia_os = licencia_os;
+    }
+
+    public int getLicencia_paqueteria() {
+        return licencia_paqueteria;
+    }
+
+    public void setLicencia_paqueteria(int licencia_paqueteria) {
+        this.licencia_paqueteria = licencia_paqueteria;
+    }
+
+    
 
     public String getSoftware() {
         return software;

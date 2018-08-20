@@ -11,36 +11,54 @@ package mx.gob.bcs.dba;
  */
 public class PermisoUsuarioInternetBean {
     
-    private int id;
-    private int usuario_id;
+    private int permiso_id;
+    private int empleado_id;
     private int nivel_id;
     private String descripcion;
     private String fecha_alta;
     private String fecha_baja;
+    private String fecha_reactivacion;
     private String observacion;
-    private int creado_por;
-    private String fecha_creacion;
-    private int modificado_por;
-    private String fecha_modicacion;
+    private int estatus;
+    
 
     public PermisoUsuarioInternetBean() {
     }
 
-    public int getId() {
-        return id;
+    public int getPermiso_id() {
+        return permiso_id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setPermiso_id(int permiso_id) {
+        this.permiso_id = permiso_id;
     }
 
-    public int getUsuario_id() {
-        return usuario_id;
+    public int getEmpleado_id() {
+        return empleado_id;
     }
 
-    public void setUsuario_id(int usuario_id) {
-        this.usuario_id = usuario_id;
+    public void setEmpleado_id(int empleado_id) {
+        this.empleado_id = empleado_id;
     }
+
+    public String getFecha_reactivacion() {
+        return fecha_reactivacion;
+    }
+
+    public void setFecha_reactivacion(String fecha_reactivacion) {
+        this.fecha_reactivacion = fecha_reactivacion;
+    }
+
+    public int getEstatus() {
+        return estatus;
+    }
+
+    public void setEstatus(int estatus) {
+        this.estatus = estatus;
+    }
+
+    
+    
 
     public int getNivel_id() {
         return nivel_id;
@@ -82,37 +100,7 @@ public class PermisoUsuarioInternetBean {
         this.observacion = observacion;
     }
 
-    public int getCreado_por() {
-        return creado_por;
-    }
-
-    public void setCreado_por(int creado_por) {
-        this.creado_por = creado_por;
-    }
-
-    public String getFecha_creacion() {
-        return fecha_creacion;
-    }
-
-    public void setFecha_creacion(String fecha_creacion) {
-        this.fecha_creacion = fecha_creacion;
-    }
-
-    public int getModificado_por() {
-        return modificado_por;
-    }
-
-    public void setModificado_por(int modificado_por) {
-        this.modificado_por = modificado_por;
-    }
-
-    public String getFecha_modicacion() {
-        return fecha_modicacion;
-    }
-
-    public void setFecha_modicacion(String fecha_modicacion) {
-        this.fecha_modicacion = fecha_modicacion;
-    }
+    
     
     
 }

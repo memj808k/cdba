@@ -17,6 +17,7 @@ public class UsuarioBean extends PersonalBean implements Serializable{
    
     private String usuario;
     private String contrasena;
+    private String contrasena_temp;
     
     public UsuarioBean() {
     }
@@ -35,6 +36,14 @@ public class UsuarioBean extends PersonalBean implements Serializable{
 
     public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
+    }
+
+    public String getContrasena_temp() {
+        return contrasena_temp;
+    }
+
+    public void setContrasena_temp(String contrasena_temp) {
+        this.contrasena_temp = contrasena_temp;
     }
     
     

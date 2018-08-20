@@ -11,7 +11,7 @@ import java.io.Serializable;
  *
  * @author Rembao
  */
-public class DepartamentoBean extends SubSecretariaBean implements Serializable{
+public class DepartamentoBean extends DireccionBean implements Serializable{
     
     private int departamento_id;
     private String departamento;
